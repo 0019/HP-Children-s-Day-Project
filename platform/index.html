@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>5th Floor Platform</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+	<script src="framework/aframe-mouse-cursor-component/dist/aframe-mouse-cursor-component.min.js"></script>
+	<!--<script src="js/aframe-meshline-component.min.js"></script>-->
+</head>
+
+<body class="noselect">
+	<svg id="map"></svg>
+	<h3 class="gym">Go to Gym</h3>
+	<h3 class="audi">Go to Audi</h3>
+	<a-scene>
+		<a-assets>
+			<img id="img1" src="img/L1.jpg">
+			<img id="img2" src="img/L2.jpg">
+			<img id="img3" src="img/L3.jpg">
+			<img id="img4" src="img/L4.jpg">
+			<img id="img5" src="img/L5.jpg">
+			<img id="img6" src="img/L6.jpg">
+		</a-assets>
+		<a-entity id="spheres" position="0 -1.8 0">
+		</a-entity>
+		<a-entity id="camera" position="0 0 0" camera mouse-cursor look-controls>
+			<!--<a-ring class="ring" color="red" opacity="0.5" radius-inner="0.005" radius-outer="0.02" position="0 0 -1"></a-ring>-->
+		</a-entity>
+	
+		<a-sky id="sky" src="#img1" radius="100" rotation="0 -85 0"></a-sky>
+	</a-scene>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
